@@ -4831,7 +4831,8 @@ div#sparklinehome canvas {
 }
 
 .header-top-area {
-    background: #40407e;
+    background: #006DF0
+        /* #40407e; */
 }
 
 .sidebar-nav .metismenu {
@@ -4938,7 +4939,8 @@ div#sparklinehome canvas {
 }
 
 .footer-copyright-area {
-    background: #40407e;
+    background: #006DF0;
+    /*#40407e;*/
     padding: 20px 0px;
     text-align: center;
 }

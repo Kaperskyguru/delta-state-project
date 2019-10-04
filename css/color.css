@@ -3,17 +3,17 @@
 .wrap-404 a.back,
 .wrap-404 button.btn,
 .main-slider .owl-carousel button.owl-dot span:hover, .main-slider .owl-carousel button.owl-dot.active span, .banner-tags li:hover, .header .topbar, .city-highlights .owl-carousel .owl-nav button.owl-next:hover, .city-highlights .owl-carousel .owl-nav button.owl-prev:hover, .sub-menu a:hover, .logo-nav-row .dropdown-menu>li>a:hover, .slider-caption a:hover, .Mayor-text a:hover, .title-style-2 a:hover, .city-highlights .owl-carousel .owl-nav button.owl- next:hover, .city-highlights .owl-carousel .owl-nav button.owl-prev:hover, .emergency-info, .stay-connected input[type="submit"], .h2-Mayor-msg .Mayor-txt a:hover, .team-heading a:hover, .h3-slider-caption a:hover, .news-details blockquote, .single-post-tags a:hover, .post-comments-form input[type="submit"], .deprt-icon-box a.rm:hover, a.jobs-link:hover, .community-links-style-two li a img, .widget .upcoming-events li:hover .edate, .contact-team, .newsletter-style2 button, .post-comments-form input[type="submit"], .service-page-bottom .newsletter-form button, .city-updates li.more-news a:hover, .department-links li a, .contact-form input[type="submit"], .event-date-share .edate, .event-gallery .eg-thumb a:hover, a.dbutton, .dn-btn, .single-donation-box .progress .progress-bar, li.form-submit button, .donator-details input[type="submit"], .login-box input[type="submit"], .login-account, .register-account input[type="submit"], .home3.emergency-numbers .newsletter-form button {
-	background-color: #40407e;
+	background-color: #006DF0 /*#40407e*/;
 }
 /******** + ========== + Blue Text Color Start + ========== + ********/
 
 .sub-menu a, .logo-nav-row .dropdown-menu>li>a, .e-numbers .info-num h3, .community-box h6, .twitter-widget a.reply-tw:hover, ul.post-time a i, .add-box i, .event-counter a, .event-content ul.emeta li strong, .event-gallery .eg-thumb a, .campaign-thumb a, ul.participants li strong i {
-	color: #40407e;
+	color: #006DF0 /*#40407e*/;
 }
 /******** + ========== + Blue Border Color Start + ========== + ********/
 
 .main-slider .owl-carousel button.owl-dot span:hover, .main-slider .owl-carousel button.owl-dot.active span, .twitter-widget a.reply-tw:hover, .single-post-tags a:hover, .post-comments-form input[type="submit"] {
-	border-color: #40407e;
+	border-color: #006DF0 /*#40407e*/;
 }
 /******** + ========== + Pink BackgroundColor Start + ========== + ********/
 

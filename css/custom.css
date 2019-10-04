@@ -209,7 +209,9 @@ header {
 }
 
 .header .topbar {
-	background: #40407e;
+	background: #006DF0
+		/*#40407e*/
+	;
 }
 
 .topbar ul {
@@ -1354,7 +1356,9 @@ a.see-more:hover {
 }
 
 .emergency-info {
-	background: #40407e;
+	background: #006DF0
+		/* #40407e*/
+	;
 	width: 100%;
 	float: left;
 	border-radius: 5px;
@@ -3114,7 +3118,9 @@ body .btn-group.open .dropdown-toggle {
 }
 
 .header-two .topbar {
-	background: url(../images/npatt.png) #12498a;
+	background: url(../images/npatt1.jpg) #006DF0
+		/*#12498a*/
+	;
 }
 
 .header-two .topbar p {
@@ -3444,7 +3450,7 @@ li.header-weather {
 /*********** Mayor Msg with Video Start ***********/
 
 .Mayor-video-msg {
-	background: url(../images/npatt.png);
+	background: url(../images/npatt1.jpg);
 	padding: 40px 0 60px;
 }
 
@@ -6500,7 +6506,7 @@ div#filters {
 	position: relative;
 	z-index: 999;
 	top: -45px;
-	background: url(../images/npatt.png);
+	background: url(../images/npatt1.jpg);
 }
 
 .event-counter ul {
@@ -8584,3 +8590,15 @@ ul.team-social a,
 }
 
 /******** + ========== + Transition End + ========== + ********/
+
+.overlay1 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	opacity: 0.9;
+}
