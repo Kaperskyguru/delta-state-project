@@ -4,52 +4,69 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Check Result | Delta</title>
+    <title>Add Course | Kiaalap - Kiaalap Admin Template</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
-                    ============================================ -->
+		============================================ -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <!-- Google Fonts
-                    ============================================ -->
+		============================================ -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
     <!-- Bootstrap CSS
-                    ============================================ -->
+		============================================ -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Bootstrap CSS
-                    ============================================ -->
+		============================================ -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
-
+    <!-- owl.carousel CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <!-- animate CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- normalize CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/normalize.css">
     <!-- meanmenu icon CSS
-                    ============================================ -->
+		============================================ -->
     <link rel="stylesheet" href="css/meanmenu.min.css">
     <!-- main CSS
-                    ============================================ -->
+		============================================ -->
     <link rel="stylesheet" href="css/main.css">
-    <!-- forms CSS
-                    ============================================ -->
-    <link rel="stylesheet" href="css/form/all-type-forms.css">
+    <!-- dropzone CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/dropzone/dropzone.css">
     <!-- educate icon CSS
-                    ============================================ -->
+		============================================ -->
     <link rel="stylesheet" href="css/educate-custon-icon.css">
-
+    <!-- morrisjs CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/morrisjs/morris.css">
     <!-- mCustomScrollbar CSS
-                    ============================================ -->
+		============================================ -->
     <link rel="stylesheet" href="css/scrollbar/jquery.mCustomScrollbar.min.css">
     <!-- metisMenu CSS
-                    ============================================ -->
+		============================================ -->
     <link rel="stylesheet" href="css/metisMenu/metisMenu.min.css">
     <link rel="stylesheet" href="css/metisMenu/metisMenu-vertical.css">
-
+    <!-- calendar CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/calendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="css/calendar/fullcalendar.print.min.css">
+    <!-- forms CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/form/all-type-forms.css">
     <!-- style CSS
-                    ============================================ -->
+		============================================ -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/custom.css">
     <!-- responsive CSS
-                    ============================================ -->
+		============================================ -->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- modernizr JS
-                    ============================================ -->
+		============================================ -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
@@ -315,12 +332,9 @@
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <ul class="breadcome-menu">
-                                            <li><a href="#">Home</a> <span class="bread-slash">/</span>
+                                            <li><a href="index.html">Home</a> <span class="bread-slash">/</span>
                                             </li>
-                                            <li><a href="check-result.html">Result</a> <span
-                                                    class="bread-slash">/</span>
-                                            </li>
-                                            <li><span class="bread-blod">View Result</span>
+                                            <li><span class="bread-blod">Upload Result</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -331,31 +345,214 @@
                 </div>
             </div>
         </div>
-
-
-        <div class="pdf-viewer-area mt-t-30 mg-b-15">
+        <!-- Single pro tab review Start-->
+        <div class="single-pro-review-area mt-t-30 mg-b-15">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="pdf-single-pro" style="padding: 20px; padding-left: 4.5em; background: #fff;">
-                            <a class="media" href="pdf/NOU191027070.pdf"></a>
+                        <div class="product-payment-inner-st">
+                            <ul id="myTabedu1" class="tab-review-design">
+                                <li class="active"><a href="#description">Student Details</a></li>
+                                <li><a href="#reviews"> Upload Results</a></li>
+                                <!-- <li><a href="#INFORMATION">Social Information</a></li> -->
+                            </ul>
+                            <div id="myTabContent" class="tab-content custom-product-edit">
+                                <div class="product-tab-list tab-pane fade active in" id="description">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+                                                <div id="dropzone1" class="pro-ad addcoursepro">
+                                                    <form action="/upload"
+                                                        class="dropzone dropzone-custom needsclick addcourse"
+                                                        id="demo1-upload">
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <input name="student_id" type="text"
+                                                                        class="form-control"
+                                                                        placeholder="Enter Student ID">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <input disabled name="schoolname" type="text"
+                                                                        class="form-control" placeholder="School Name">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input disabled name="studentname" id="studentname"
+                                                                        type="text" class="form-control"
+                                                                        placeholder="Student Name">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input disabled name="Term" type="text"
+                                                                        class="form-control" placeholder="Student Term">
+                                                                </div>
+                                                                <!--  -->
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                                <div class="form-group res-mg-t-15">
+                                                                    <input disabled name="studentclass" type="text"
+                                                                        class="form-control"
+                                                                        placeholder="Student Class">
+                                                                </div>
+                                                                <!-- <div class="form-group">
+                                                                    <textarea name="description"
+                                                                        placeholder="Description"></textarea>
+                                                                </div> -->
+                                                                <div class="form-group">
+                                                                    <input disabled name="studentdivision" type="text"
+                                                                        class="form-control"
+                                                                        placeholder="Student Division">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input disabled id="year" name="year" type="text"
+                                                                        class="form-control" placeholder="Year">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--  -->
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="margin-bottom:53px">
+                                    </div>
+                                </div>
+                                <div class="product-tab-list tab-pane fade" id="reviews">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="devit-card-custom">
+                                                            <div class="form-group">
+                                                                <input disabled type="text" class="form-control"
+                                                                    placeholder="Mathematics">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input disabled type="text" class="form-control"
+                                                                    placeholder="English Language">
+                                                            </div>
+                                                            <hr>
+                                                            <div class="form-group">
+                                                                <select class="form-control">
+                                                                    <option selected disabled>Select other subjects</o>
+                                                                    <option>Litrature</option>
+                                                                    <option>Litrature</option>
+                                                                    <option>Litrature</option>
+                                                                    <option>Litrature</option>
+                                                                    <option>Litrature</option>
+                                                                    <option>Litrature</option>
+                                                                    <option>Litrature</option>
+                                                                    <option>Litrature</option>
+                                                                    <option>Litrature</option>
+                                                                    <option>Litrature</option>
+                                                                    <option>Litrature</option>
+                                                                    <option>Litrature</option>
+                                                                    <option>Litrature</option>
+                                                                </select>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <!--    Maths -->
+                                                    <div class="devit-card-custom">
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                            <div class="form-group">
+                                                                <input type="number" min="1" max="100"
+                                                                    class="form-control"
+                                                                    placeholder="Mathematics Test 1 Score">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="number" min="1" max="100"
+                                                                    class="form-control"
+                                                                    placeholder="English Language Test 1 Score">
+                                                            </div>
+                                                            <hr />
+                                                            <div class="form-group">
+                                                                <input type="number" min="1" max="100"
+                                                                    class="form-control"
+                                                                    placeholder="Others Test 1 Score">
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- Engish -->
+                                                    <div class="devit-card-custom">
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                            <div class="form-group">
+                                                                <input type="number" min="1" max="100"
+                                                                    class="form-control"
+                                                                    placeholder="Mathematics Test 2 Score">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="number" min="1" max="100"
+                                                                    class="form-control"
+                                                                    placeholder="English Language Test 2 Score">
+                                                            </div>
+                                                            <hr />
+                                                            <div class="form-group">
+                                                                <input type="number" min="1" max="100"
+                                                                    class="form-control"
+                                                                    placeholder="Others Test 2 Score">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Others -->
+
+                                                    <div class="devit-card-custom">
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+
+                                                            <div class="form-group">
+                                                                <input type="number" min="1" max="100"
+                                                                    class="form-control"
+                                                                    placeholder="Mathematics Examination Score">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="number" min="1" max="100"
+                                                                    class="form-control"
+                                                                    placeholder="English Language Examination Score">
+                                                            </div>
+                                                            <hr />
+                                                            <div class="form-group">
+                                                                <input type="number" min="1" max="100"
+                                                                    class="form-control"
+                                                                    placeholder="Others Examination Score">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group payment-adress">
+                                                        <a href="#"
+                                                            class="btn btn-primary btn-lg waves-effect waves-light">Submit</a>
+                                                    </div>
+                                                </div>
+                                                <div style="margin-bottom:32px"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer-copyright-area">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="footer-copy-right">
-                            <p>Copyright © 2018. All rights reserved. Template by <a
-                                    href="https://colorlib.com/wp/templates/">Colorlib</a></p>
-                        </div>
+    </div>
+
+    <div class="footer-copyright-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-copy-right">
+                        <p>Copyright © 2018. All rights reserved. Designed by <a
+                                href="https://facebook.com/multimegaitschool/">Multimega Groups</a></p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- jquery
@@ -375,6 +572,7 @@
     <!-- scrollUp JS
 		============================================ -->
     <script src="js/jquery.scrollUp.min.js"></script>
+
     <!-- mCustomScrollbar JS
 		============================================ -->
     <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -384,16 +582,6 @@
     <script src="js/metisMenu/metisMenu.min.js"></script>
     <script src="js/metisMenu/metisMenu-active.js"></script>
 
-    <!-- pdf JS
-		============================================ -->
-    <script src="js/pdf/jquery.media.js"></script>
-    <script src="js/pdf/pdf-active.js"></script>
-    <!-- tab JS
-		============================================ -->
-    <script src="js/tab.js"></script>
-    <!-- plugins JS
-		============================================ -->
-    <script src="js/plugins.js"></script>
     <!-- main JS
 		============================================ -->
     <script src="js/main.js"></script>
