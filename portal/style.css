@@ -767,13 +767,15 @@ ul.notification-menu {
     height: 230px;
 }
 
-ul.message-menu li .message-img {
+ul.message-menu li .message-img,
+.message-img-1 {
     float: left;
     width: 70px;
     margin-right: 10px;
 }
 
-ul.message-menu li .message-img img {
+ul.message-menu li .message-img img,
+.message-img-1 img {
     border-radius: 50%;
 }
 
