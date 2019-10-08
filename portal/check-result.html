@@ -219,6 +219,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- Mobile Menu start -->
             <div class="mobile-menu-area">
                 <div class="container">
@@ -234,7 +235,7 @@
                                         <li><a data-toggle="collapse" data-target="#demoevent" href="#">Results <span
                                                     class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                             <ul id="demoevent" class="collapse dropdown-header-top">
-                                                <li><a href="#">Check Result</a>
+                                                <li><a href="check-result.html">Check Result</a>
                                                 </li>
                                                 <li><a href="upload-results.html">Upload Result</a>
                                                 </li>
@@ -300,6 +301,8 @@
                     </div>
                 </div>
             </div>
+
+
             <!-- Mobile Menu end -->
             <div class="breadcome-area">
                 <div class="container-fluid">
@@ -318,9 +321,9 @@
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <ul class="breadcome-menu">
-                                            <li><a href="index.html">Home</a> <span class="bread-slash">/</span>
+                                            <li><a href="#">Home</a> <span class="bread-slash">/</span>
                                             </li>
-                                            <li><span class="bread-blod">Check Result</span>
+                                            <li><span class="bread-blod">Dashboard</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -331,6 +334,8 @@
                 </div>
             </div>
         </div>
+
+
         <!-- Single pro tab review Start-->
         <div class="single-pro-review-area mt-t-30 mg-b-15">
             <div class="container-fluid">
@@ -345,7 +350,8 @@
                                                 <div class="row">
                                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                         <div class="form-group">
-                                                            <select name="school" required class="form-control">
+                                                            <select name="school" id="s_school" required
+                                                                class="form-control">
                                                                 <option value="none" selected="" disabled="">
                                                                     Select school</option>
                                                                 <option value="1">Merit Mixed Secondary School</option>
@@ -381,7 +387,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="form-group">
-                                                            <select name="school" class="form-control">
+                                                            <select name="school" id="s_class" class="form-control">
                                                                 <option value="none" selected="" disabled="">
                                                                     Select class</option>
                                                                 <option value="0">Jss1</option>
@@ -393,7 +399,7 @@
                                                             </select>
                                                         </div>
                                                         <div class="form-group">
-                                                            <select name="school" class="form-control">
+                                                            <select name="school" id="s_division" class="form-control">
                                                                 <option value="none" selected="" disabled="">
                                                                     Select division</option>
                                                                 <option value="0">A</option>
@@ -405,12 +411,12 @@
                                                             </select>
                                                         </div>
                                                         <div class="form-group">
-                                                            <input name="id" type="text" class="form-control"
+                                                            <input name="id" id="id" type="text" class="form-control"
                                                                 placeholder="Enter Student ID">
                                                         </div>
                                                         <div class="form-group payment-adress">
-                                                            <a href="#" class="jobs-link">Load
-                                                                Result Data</a>
+                                                            <button id="loadResultData" class="jobs-link">Load
+                                                                Result Data</button>
                                                         </div>
 
                                                     </div>
@@ -418,23 +424,23 @@
                                             <form action="" class="needsclick add-professors">
                                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                     <div class="form-group">
-                                                        <input name="name" disabled type="text" class="form-control"
-                                                            placeholder="Full name">
+                                                        <input name="name" id="fullname" disabled type="text"
+                                                            class="form-control" placeholder="Full name">
                                                     </div>
                                                     <div class="form-group res-mg-t-15">
-                                                        <input name="school" disabled type="text" class="form-control"
-                                                            placeholder="School">
+                                                        <input name="school" id="school_name" disabled type="text"
+                                                            class="form-control" placeholder="School">
                                                     </div>
                                                     <div class="form-group">
-                                                        <input name="gender" disabled type="text" class="form-control"
-                                                            placeholder="Gender">
+                                                        <input name="gender" id="gender" disabled type="text"
+                                                            class="form-control" placeholder="Gender">
                                                     </div>
                                                     <div class="form-group">
-                                                        <input name="class" disabled type="text" class="form-control"
-                                                            placeholder="Class">
+                                                        <input name="class" id="class" disabled type="text"
+                                                            class="form-control" placeholder="Class">
                                                     </div>
                                                     <div class="form-group">
-                                                        <input name="card" type="text" class="form-control"
+                                                        <input name="card" type="text" id="pin" class="form-control"
                                                             placeholder="Enter Scratch Card">
                                                     </div>
                                                     <div class="form-group payment-adress">
@@ -508,6 +514,40 @@
     <!-- main JS
 		============================================ -->
     <script src="js/main.js"></script>
+
+    <script>
+        const loadData = document.getElementById('loadResultData');
+
+        const txtName = document.getElementById('fullname');
+        const txtClass = document.getElementById('class');
+        const txtSchool = document.getElementById('school_name');
+        const txtGender = document.getElementById('gender');
+        const txtID = document.getElementById('id');
+        const txtPin = document.getElementById('pin');
+
+        const txtS_School = document.getElementById('s_school');
+        const txtS_Class = document.getElementById('s_class');
+
+        loadData.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            if (txtS_School.options[txtS_School.selectedIndex].text) {
+                txtSchool.value = txtS_School.options[txtS_School.selectedIndex].text;
+            } else {
+                txtSchool.value = "Mastercare International School";
+            }
+
+            if (txtS_Class.options[txtS_Class.selectedIndex].text) {
+                txtClass.value = txtS_Class.options[txtS_Class.selectedIndex].text;
+            } else {
+                txtClass.value = "SS 3";
+            }
+            txtName.value = "Solomon E. Eseme";
+            txtGender.value = "Male";
+            txtID.value = "123247297";
+            txtPin.value = "1232476472983738297";
+        });
+    </script>
 </body>
 
 </html>
