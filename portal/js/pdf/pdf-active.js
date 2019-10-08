@@ -1,10 +1,7 @@
 (function ($) {
-	"use strict";
+ "use strict";
 
-	$('a.media').media({
-		width: 1000,
-		height: 950
-	});
-
-
-})(jQuery);
+		$('a.media').media({width:630, height:950});
+		 
+ 
+})(jQuery); 

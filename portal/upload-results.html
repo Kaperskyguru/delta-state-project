@@ -17,56 +17,57 @@
 		============================================ -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Bootstrap CSS
-		============================================ -->
+            ============================================ -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- owl.carousel CSS
-		============================================ -->
+            ============================================ -->
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.css">
     <link rel="stylesheet" href="css/owl.transitions.css">
     <!-- animate CSS
-		============================================ -->
+            ============================================ -->
     <link rel="stylesheet" href="css/animate.css">
     <!-- normalize CSS
-		============================================ -->
+            ============================================ -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- meanmenu icon CSS
-		============================================ -->
+            ============================================ -->
     <link rel="stylesheet" href="css/meanmenu.min.css">
     <!-- main CSS
-		============================================ -->
+            ============================================ -->
     <link rel="stylesheet" href="css/main.css">
-    <!-- dropzone CSS
-		============================================ -->
-    <link rel="stylesheet" href="css/dropzone/dropzone.css">
     <!-- educate icon CSS
-		============================================ -->
+            ============================================ -->
     <link rel="stylesheet" href="css/educate-custon-icon.css">
     <!-- morrisjs CSS
-		============================================ -->
+            ============================================ -->
     <link rel="stylesheet" href="css/morrisjs/morris.css">
     <!-- mCustomScrollbar CSS
-		============================================ -->
+            ============================================ -->
     <link rel="stylesheet" href="css/scrollbar/jquery.mCustomScrollbar.min.css">
     <!-- metisMenu CSS
-		============================================ -->
+            ============================================ -->
     <link rel="stylesheet" href="css/metisMenu/metisMenu.min.css">
     <link rel="stylesheet" href="css/metisMenu/metisMenu-vertical.css">
     <!-- calendar CSS
-		============================================ -->
+            ============================================ -->
     <link rel="stylesheet" href="css/calendar/fullcalendar.min.css">
     <link rel="stylesheet" href="css/calendar/fullcalendar.print.min.css">
     <!-- forms CSS
-		============================================ -->
+            ============================================ -->
     <link rel="stylesheet" href="css/form/all-type-forms.css">
+    <!-- dropzone CSS
+            ============================================ -->
+    <link rel="stylesheet" href="css/dropzone/dropzone.css">
     <!-- style CSS
-		============================================ -->
+            ============================================ -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/custom.css">
     <!-- responsive CSS
-		============================================ -->
+            ============================================ -->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- modernizr JS
-		============================================ -->
+            ============================================ -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
@@ -78,8 +79,10 @@
     <div class="left-sidebar-pro">
         <nav id="sidebar" class="">
             <div class="sidebar-header">
-                <a href="index.html"><img class="main-logo" src="img/logo/logosn.png" alt="" /></a>
-                <strong><a href="index.html"><img src="img/logo/logosn.png" alt="" /></a></strong>
+                <a href="index.html"><img class="main-logo" src="img/logo/delta_logo150x150.png" style="max-height:60px"
+                        height="60px" alt="" /></a>
+                <strong><a href="index.html"><img src="img/logo/delta_logo150x150.png" style="max-height:60px"
+                            height="60px" alt="" /></a></strong>
             </div>
             <div class="left-custom-menu-adp-wrap comment-scrollbar">
                 <nav class="sidebar-nav left-sidebar-menu-pro">
@@ -191,7 +194,8 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="logo-pro">
-                        <a href="index.html"><img class="main-logo" src="img/logo/logo.png" alt="" /></a>
+                        <a href="index.html"><img class="main-logo" src="img/logo/delta_logo150x150.png"
+                                style="max-height:60px" height="60px" alt="" /></a>
                     </div>
                 </div>
             </div>
@@ -241,16 +245,16 @@
                             <div class="mobile-menu">
                                 <nav id="dropdown">
                                     <ul class="mobile-menu-nav">
-                                        <li><a href="#">Dashboard <span
+                                        <li><a href="index.html">Dashboard <span
                                                     class="admin-project-icon edu-icon edu-down-arrow"></span></a>
 
                                         </li>
                                         <li><a data-toggle="collapse" data-target="#demoevent" href="#">Results <span
                                                     class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                             <ul id="demoevent" class="collapse dropdown-header-top">
-                                                <li><a href="#">All Results</a>
+                                                <li><a href="#">Check Result</a>
                                                 </li>
-                                                <li><a href="upload-results.html">Add Result</a>
+                                                <li><a href="upload-results.html">Upload Result</a>
                                                 </li>
                                                 <li><a href="#">Edit Result</a>
                                                 </li>
@@ -354,25 +358,32 @@
                             <ul id="myTabedu1" class="tab-review-design">
                                 <li class="active"><a href="#description">Student Details</a></li>
                                 <li><a href="#reviews"> Upload Results</a></li>
-                                <!-- <li><a href="#INFORMATION">Social Information</a></li> -->
+                                <li><a href="#INFORMATION">Traits</a></li>
                             </ul>
                             <div id="myTabContent" class="tab-content custom-product-edit">
                                 <div class="product-tab-list tab-pane fade active in" id="description">
                                     <div class="row">
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="review-content-section">
-                                                <div id="dropzone1" class="pro-ad addcoursepro">
+                                                <div id="dropzone1" class="pro-ad">
                                                     <form action="/upload"
-                                                        class="dropzone dropzone-custom needsclick addcourse"
+                                                        class="dropzone dropzone-custom needsclick add-professors"
                                                         id="demo1-upload">
                                                         <div class="row">
-                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
                                                                 <div class="form-group">
                                                                     <input name="student_id" type="text"
                                                                         class="form-control"
                                                                         placeholder="Enter Student ID">
                                                                 </div>
                                                             </div>
+                                                            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                                                <div class="message-img-1">
+                                                                    <img src="img/contact/4.jpg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                                 <div class="form-group">
                                                                     <input disabled name="schoolname" type="text"
@@ -387,7 +398,22 @@
                                                                     <input disabled name="Term" type="text"
                                                                         class="form-control" placeholder="Student Term">
                                                                 </div>
-                                                                <!--  -->
+                                                                <div class="form-group alert-up-pd">
+                                                                    <div class="dz-message needsclick download-custom">
+                                                                        <i class="fa fa-download edudropnone"
+                                                                            aria-hidden="true"></i>
+                                                                        <h2 class="edudropnone">Drop image here or click
+                                                                            to upload.</h2>
+                                                                        <p class="edudropnone"><span
+                                                                                class="note needsclick">(This is just a
+                                                                                demo dropzone. Selected image is
+                                                                                <strong>not</strong> actually
+                                                                                uploaded.)</span>
+                                                                        </p>
+                                                                        <input name="imageico" class="hd-pro-img"
+                                                                            type="text" />
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                                 <div class="form-group res-mg-t-15">
@@ -395,28 +421,29 @@
                                                                         class="form-control"
                                                                         placeholder="Student Class">
                                                                 </div>
-                                                                <!-- <div class="form-group">
-                                                                    <textarea name="description"
-                                                                        placeholder="Description"></textarea>
-                                                                </div> -->
                                                                 <div class="form-group">
                                                                     <input disabled name="studentdivision" type="text"
                                                                         class="form-control"
                                                                         placeholder="Student Division">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input disabled id="year" name="year" type="text"
-                                                                        class="form-control" placeholder="Year">
+                                                                    <input disabled id="academicsession"
+                                                                        name="academicsession" type="text"
+                                                                        class="form-control"
+                                                                        placeholder="Academic Session">
                                                                 </div>
+                                                                <div class="form-group">
+                                                                    <input disabled id="gender" name="gender"
+                                                                        type="text" class="form-control"
+                                                                        placeholder="Gender">
+                                                                </div>
+
                                                             </div>
                                                         </div>
-                                                        <!--  -->
                                                     </form>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div style="margin-bottom:53px">
                                     </div>
                                 </div>
                                 <div class="product-tab-list tab-pane fade" id="reviews">
@@ -424,7 +451,7 @@
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="review-content-section">
                                                 <div class="row">
-                                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                         <div class="devit-card-custom">
                                                             <div class="form-group">
                                                                 <input disabled type="text" class="form-control"
@@ -437,20 +464,253 @@
                                                             <hr>
                                                             <div class="form-group">
                                                                 <select class="form-control">
-                                                                    <option selected disabled>Select other subjects</o>
-                                                                    <option>Litrature</option>
-                                                                    <option>Litrature</option>
-                                                                    <option>Litrature</option>
-                                                                    <option>Litrature</option>
-                                                                    <option>Litrature</option>
-                                                                    <option>Litrature</option>
-                                                                    <option>Litrature</option>
-                                                                    <option>Litrature</option>
-                                                                    <option>Litrature</option>
-                                                                    <option>Litrature</option>
-                                                                    <option>Litrature</option>
-                                                                    <option>Litrature</option>
-                                                                    <option>Litrature</option>
+                                                                    <option selected disabled>Select other subjects
+                                                                    </option>
+                                                                    <option disabled>Primary Subjects</option>
+                                                                    <option>Language Arts</option>
+                                                                    <option>Mathematics</option>
+                                                                    <option>Science</option>
+                                                                    <option>Health</option>
+                                                                    <option>Handwriting</option>
+                                                                    <option>Physical Education (P.E.)</option>
+                                                                    <option>Art</option>
+                                                                    <option>Music</option>
+                                                                    <option>Instrumental Music – specific instrument
+                                                                    </option>
+                                                                    <option>Handwork or handcrafts</option>
+                                                                    <option>Life Lab or gardening</option>
+                                                                    <option>Dramatics</option>
+                                                                    <option>Dance</option>
+                                                                    <option>Spanish or other foreign language</option>
+                                                                    <option>Leadership</option>
+                                                                    <option>Special Education Day Class</option>
+                                                                    <option>Resource Program</option>
+                                                                    <option>Speech</option>
+                                                                    <option>Adaptive P.E.</option>
+                                                                    <option>Occupational Therapy</option>
+                                                                    <option>Middle School Subjects</option>
+                                                                    <option>Movement or Eurythmy</option>
+                                                                    <option disabled>CORE – core subjects class</option>
+                                                                    <option>Reading</option>
+                                                                    <option>Language arts</option>
+                                                                    <option>Speech and Debate</option>
+                                                                    <option>English</option>
+                                                                    <option>Basic Math</option>
+                                                                    <option>Pre-algebra</option>
+                                                                    <option>Consumer Math</option>
+                                                                    <option>Algebra</option>
+                                                                    <option>Geometry</option>
+                                                                    <option>Honors Math in Algebra or Geometry</option>
+                                                                    <option>Life Science</option>
+                                                                    <option>Earth Science</option>
+                                                                    <option>Physical Science</option>
+                                                                    <option>Health</option>
+                                                                    <option>Social Studies</option>
+                                                                    <option>Geography</option>
+                                                                    <option>Ancient Civilizations</option>
+                                                                    <option>Medieval and Renaissance</option>
+                                                                    <option>U.S. History and Government</option>
+                                                                    <option>French / Spanish / Latin</option>
+                                                                    <option>Computer Science or Lab</option>
+                                                                    <option>Art</option>
+                                                                    <option>Home Economics</option>
+                                                                    <option>Woodshop</option>
+                                                                    <option>Metal Shop</option>
+                                                                    <option>Business Technology</option>
+                                                                    <option>Instrumental Music</option>
+                                                                    <option>Band</option>
+                                                                    <option>Choir</option>
+                                                                    <option>Drama</option>
+                                                                    <option>Physical Education</option>
+                                                                    <option>Sports</option>
+                                                                    <option>Resource Program</option>
+                                                                    <option>Speech Therapy</option>
+                                                                    <option>Occupational Therapy</option>
+                                                                    <option disabled>High School Subjects</option>
+                                                                    <option>ENGLISH</option>
+                                                                    <option>English I</option>
+                                                                    <option>English II</option>
+                                                                    <option>English III</option>
+                                                                    <option>English IV</option>
+                                                                    <option>Remedial English</option>
+                                                                    <option>ESL – English as second language</option>
+                                                                    <option>World Literature</option>
+                                                                    <option>Ancient Literature</option>
+                                                                    <option>Medieval Literature</option>
+                                                                    <option>Renaissance Literature</option>
+                                                                    <option>Modern Literature</option>
+                                                                    <option>British Literature</option>
+                                                                    <option>American Literature</option>
+                                                                    <option>{Short Story}</option>
+                                                                    <option>{Classical literature}</option>
+                                                                    <option>{Shakespeare}</option>
+                                                                    <option>{Heroes, Myth and Legend}</option>
+                                                                    <option>{Film as Literature}</option>
+                                                                    <option>Composition</option>
+                                                                    <option>Creative Writing</option>
+                                                                    <option>Poetry</option>
+                                                                    <option>Grammar</option>
+                                                                    <option>Vocabulary</option>
+                                                                    <option>Debate</option>
+                                                                    <option>Speech</option>
+                                                                    <option>Journalism</option>
+                                                                    <option>Publishing Skills</option>
+                                                                    <option>Photojournalism</option>
+                                                                    <option>Yearbook</option>
+                                                                    <option>Study Skills</option>
+                                                                    <option>Research Skills</option>
+                                                                    <option>FINE ARTS</option>
+                                                                    <option>Art I</option>
+                                                                    <option>Art II</option>
+                                                                    <option>Art III</option>
+                                                                    <option>Art IV</option>
+                                                                    <option>Art Appreciation</option>
+                                                                    <option>Art History</option>
+                                                                    <option>Drawing</option>
+                                                                    <option>Painting</option>
+                                                                    <option>Sculpture</option>
+                                                                    <option>Ceramics</option>
+                                                                    <option>Pottery</option>
+                                                                    <option>Instrumental Music</option>
+                                                                    <option>Music Appreciation</option>
+                                                                    <option>Music History</option>
+                                                                    <option>Music Theory</option>
+                                                                    <option>Music Fundamentals</option>
+                                                                    <option>Band</option>
+                                                                    <option>Orchestra</option>
+                                                                    <option>Choir</option>
+                                                                    <option>Voice</option>
+                                                                    <option>Classical Music Studies</option>
+                                                                    <option>Performing Arts</option>
+                                                                    <option>Theatre Arts -{Beg., interm., and advanced}
+                                                                    </option>
+                                                                    <option>{Improvisational Theater}</option>
+                                                                    <option>Dance</option>
+                                                                    <option>APPLIED ARTS</option>
+                                                                    <option>Computer Aided Design {Digital Media}
+                                                                    </option>
+                                                                    <option>Photography</option>
+                                                                    <option>{Videography}</option>
+                                                                    <option>{History of Film}</option>
+                                                                    <option>{Film Production}</option>
+                                                                    <option>Leather Working</option>
+                                                                    <option>Drafting</option>
+                                                                    <option>Metal Work</option>
+                                                                    <option>Small Engine Mechanics</option>
+                                                                    <option>Auto Mechanics</option>
+                                                                    <option>SCIENCE</option>
+                                                                    <option>General Science</option>
+                                                                    <option>Physics</option>
+                                                                    <option>Physical Science</option>
+                                                                    <option>Chemistry</option>
+                                                                    <option>Organic Chemistry</option>
+                                                                    <option>Life Science</option>
+                                                                    <option>Biology</option>
+                                                                    <option>Zoology</option>
+                                                                    <option>Marine Biology</option>
+                                                                    <option>Botany</option>
+                                                                    <option>Earth Science</option>
+                                                                    <option>Geology</option>
+                                                                    <option>Oceanography</option>
+                                                                    <option>Meteorology</option>
+                                                                    <option>Astronomy</option>
+                                                                    <option>Animal Science</option>
+                                                                    <option>Equine Science</option>
+                                                                    <option>Veterinary Science</option>
+                                                                    <option>Forensic Science</option>
+                                                                    <option>Ecology</option>
+                                                                    <option>Environmental Science</option>
+                                                                    <option>Gardening</option>
+                                                                    <option>Food Science</option>
+                                                                    <option>FOREIGN LANGUAGE</option>
+                                                                    <option>Spanish</option>
+                                                                    <option>French</option>
+                                                                    <option>Japanese</option>
+                                                                    <option>German</option>
+                                                                    <option>Latin</option>
+                                                                    <option>Greek</option>
+                                                                    <option>Hebrew</option>
+                                                                    <option>Chinese</option>
+                                                                    <option>{Conversational} LANGUAGE</option>
+                                                                    <option>(LANGUAGE) Literature</option>
+                                                                    <option>(LANGUAGE) Culture</option>
+                                                                    <option>(LANGUAGE) History</option>
+                                                                    <option>Sign Language</option>
+                                                                    <option>MATH</option>
+                                                                    <option>Remedial Math</option>
+                                                                    <option>Fundamental Math or Basic Math</option>
+                                                                    <option>Mathematics</option>
+                                                                    <option>Pre-Algebra</option>
+                                                                    <option>Introduction to Algebra</option>
+                                                                    <option>Algebra</option>
+                                                                    <option>Algebra I</option>
+                                                                    <option>Algebra II</option>
+                                                                    <option>Intermediate Algebra</option>
+                                                                    <option>Geometry</option>
+                                                                    <option>Trigonometry</option>
+                                                                    <option>Precalculus</option>
+                                                                    <option>Calculus</option>
+                                                                    <option>Statistics</option>
+                                                                    <option>Business Math</option>
+                                                                    <option>Consumer Math</option>
+                                                                    <option>Accounting</option>
+                                                                    <option>Personal Finance and Investing</option>
+                                                                    <option>SOCIAL STUDIES</option>
+                                                                    <option>Ancient History</option>
+                                                                    <option>Medieval History</option>
+                                                                    <option>Greek and Roman History</option>
+                                                                    <option>Modern History with US History</option>
+                                                                    <option>World History</option>
+                                                                    <option>World Geography</option>
+                                                                    <option>US History</option>
+                                                                    <option>World Religions</option>
+                                                                    <option>World Current Events {Global Issues}
+                                                                    </option>
+                                                                    <option>Government</option>
+                                                                    <option>Civics</option>
+                                                                    <option>Economics</option>
+                                                                    <option>Political Science</option>
+                                                                    <option>Social Sciences</option>
+                                                                    <option>Psychology</option>
+                                                                    <option>Sociology</option>
+                                                                    <option>Anthropology</option>
+                                                                    <option>Genealogy</option>
+                                                                    <option>Philosophy</option>
+                                                                    <option>LOGIC</option>
+                                                                    <option>Logic I</option>
+                                                                    <option>Rock Climbing</option>
+                                                                    <option>Outdoor Survival Skills</option>
+                                                                    <option>Hiking</option>
+                                                                    <option>Equestrian Skills</option>
+                                                                    <option>Weightlifting</option>
+                                                                    <option>Physical Fitness</option>
+                                                                    <option>Aerobics</option>
+                                                                    <option>Yoga</option>
+                                                                    <option>Martial Arts</option>
+                                                                    <option>Ice Skating</option>
+                                                                    <option>Figure skating</option>
+                                                                    <option>Cycling</option>
+                                                                    <option>Bowling</option>
+                                                                    <option disabled>LIFE SKILLS</option>
+                                                                    <option>Culinary Arts</option>
+                                                                    <option>Child Development</option>
+                                                                    <option>Home Management</option>
+                                                                    <option>Home Organization</option>
+                                                                    <option>Basic Yard Care</option>
+                                                                    <option>Financial Management</option>
+                                                                    <option>Driver’s Education</option>
+                                                                    <option>Personal Organization</option>
+                                                                    <option>Social Skills</option>
+                                                                    <option>Career Planning</option>
+                                                                    <option disabled>OTHER</option>
+                                                                    <option>Honors Courses in any core subject</option>
+                                                                    <option>Study Skills</option>
+                                                                    <option>SAT Prep</option>
+                                                                    <option>Work-Study</option>
+                                                                    <option>SPECIAL EDUCATION</option>
+                                                                    <option>Lifeskills</option>
+                                                                    <option>Resource Program</option>
+                                                                    <option>Speech</option>
                                                                 </select>
                                                             </div>
 
@@ -459,51 +719,30 @@
                                                     </div>
                                                     <!--    Maths -->
                                                     <div class="devit-card-custom">
-                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                                             <div class="form-group">
                                                                 <input type="number" min="1" max="100"
                                                                     class="form-control"
-                                                                    placeholder="Mathematics Test 1 Score">
+                                                                    placeholder="Mathematics CA Score">
                                                             </div>
                                                             <div class="form-group">
                                                                 <input type="number" min="1" max="100"
                                                                     class="form-control"
-                                                                    placeholder="English Language Test 1 Score">
+                                                                    placeholder="English Language CA Score">
                                                             </div>
                                                             <hr />
                                                             <div class="form-group">
                                                                 <input type="number" min="1" max="100"
-                                                                    class="form-control"
-                                                                    placeholder="Others Test 1 Score">
+                                                                    class="form-control" placeholder="Others CA Score">
                                                             </div>
                                                         </div>
 
                                                     </div>
-                                                    <!-- Engish -->
-                                                    <div class="devit-card-custom">
-                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                                            <div class="form-group">
-                                                                <input type="number" min="1" max="100"
-                                                                    class="form-control"
-                                                                    placeholder="Mathematics Test 2 Score">
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <input type="number" min="1" max="100"
-                                                                    class="form-control"
-                                                                    placeholder="English Language Test 2 Score">
-                                                            </div>
-                                                            <hr />
-                                                            <div class="form-group">
-                                                                <input type="number" min="1" max="100"
-                                                                    class="form-control"
-                                                                    placeholder="Others Test 2 Score">
-                                                            </div>
-                                                        </div>
-                                                    </div>
+
                                                     <!-- Others -->
 
                                                     <div class="devit-card-custom">
-                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 
                                                             <div class="form-group">
                                                                 <input type="number" min="1" max="100"
@@ -523,12 +762,133 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group payment-adress">
-                                                        <a href="#"
-                                                            class="btn btn-primary btn-lg waves-effect waves-light">Submit</a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-tab-list tab-pane fade" id="INFORMATION">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <h4>Affective Traits</h4>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h4>Psychomotor Skills</h4>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                                                <div class="devit-card-custom">
+                                                                    <div class="form-group">
+                                                                        <input type="number" id="puntuality"
+                                                                            class="form-control"
+                                                                            placeholder="Puntuality">
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <input type="number" id="alertness"
+                                                                            class="form-control"
+                                                                            placeholder="Mental Alertness">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="number" id="attentiveness"
+                                                                            class="form-control"
+                                                                            placeholder="Attentiveness">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="number" id="respect"
+                                                                            class="form-control" placeholder="Respect">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="number" id="school"
+                                                                            class="form-control"
+                                                                            placeholder="Altitude to School">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                                                <div class="devit-card-custom">
+                                                                    <div class="form-group">
+                                                                        <input type="number" id="neatness"
+                                                                            class="form-control" placeholder="Neatness">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="number" id="politeness"
+                                                                            class="form-control"
+                                                                            placeholder="Politeness">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="number" id="honesty"
+                                                                            class="form-control" placeholder="Honesty">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="number" id="peers"
+                                                                            class="form-control"
+                                                                            placeholder="Relationship with peers">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="number" id="teamwork"
+                                                                            class="form-control"
+                                                                            placeholder="Spirit of teamwork">
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                                                <div class="devit-card-custom">
+                                                                    <div class="form-group">
+                                                                        <input type="number" class="form-control"
+                                                                            placeholder="Reading">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="number" class="form-control"
+                                                                            placeholder="Verbal Fuency/Diction">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="number" class="form-control"
+                                                                            placeholder="Handwriting">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="number" class="form-control"
+                                                                            placeholder="Musical Skills">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                                                <div class="devit-card-custom">
+                                                                    <div class="form-group">
+                                                                        <input type="number" class="form-control"
+                                                                            placeholder="Creative Arts">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="number" class="form-control"
+                                                                            placeholder="Physical Education">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="number" class="form-control"
+                                                                            placeholder="General Reasoning">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="number" id="work"
+                                                                            class="form-control" placeholder="Completes School work
+                                                                                promptly">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div style="margin-bottom:32px"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -539,51 +899,113 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="footer-copyright-area">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer-copy-right">
-                        <p>Copyright © 2018. All rights reserved. Designed by <a
-                                href="https://facebook.com/multimegaitschool/">Multimega Groups</a></p>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="breadcome-list">
+                        <div class="payment-adress">
+                            <a href="#" class="jobs-link" style="width:200px">Upload</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
+        <div class="footer-copyright-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-copy-right">
+                            <p>Copyright © 2018. All rights reserved. Designed by <a
+                                    href="https://facebook.com/multimegaitschool/">Multimega Groups</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- jquery
 		============================================ -->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <!-- bootstrap JS
-		============================================ -->
+            ============================================ -->
     <script src="js/bootstrap.min.js"></script>
     <!-- wow JS
-		============================================ -->
+            ============================================ -->
     <script src="js/wow.min.js"></script>
-
+    <!-- price-slider JS
+            ============================================ -->
+    <script src="js/jquery-price-slider.js"></script>
     <!-- meanmenu JS
-		============================================ -->
+            ============================================ -->
     <script src="js/jquery.meanmenu.js"></script>
-
+    <!-- owl.carousel JS
+            ============================================ -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- sticky JS
+            ============================================ -->
+    <script src="js/jquery.sticky.js"></script>
     <!-- scrollUp JS
-		============================================ -->
+            ============================================ -->
     <script src="js/jquery.scrollUp.min.js"></script>
-
     <!-- mCustomScrollbar JS
-		============================================ -->
+            ============================================ -->
     <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/scrollbar/mCustomScrollbar-active.js"></script>
     <!-- metisMenu JS
-		============================================ -->
+            ============================================ -->
     <script src="js/metisMenu/metisMenu.min.js"></script>
     <script src="js/metisMenu/metisMenu-active.js"></script>
+    <!-- morrisjs JS
+            ============================================ -->
+    <script src="js/sparkline/jquery.sparkline.min.js"></script>
+    <script src="js/sparkline/jquery.charts-sparkline.js"></script>
+    <!-- calendar JS
+            ============================================ -->
+    <script src="js/calendar/moment.min.js"></script>
+    <script src="js/calendar/fullcalendar.min.js"></script>
+    <script src="js/calendar/fullcalendar-active.js"></script>
+    <!-- maskedinput JS
+            ============================================ -->
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/masking-active.js"></script>
+    <!-- datepicker JS
+            ============================================ -->
+    <script src="js/datepicker/jquery-ui.min.js"></script>
+    <script src="js/datepicker/datepicker-active.js"></script>
+    <!-- form validate JS
+            ============================================ -->
+    <script src="js/form-validation/jquery.form.min.js"></script>
+    <script src="js/form-validation/jquery.validate.min.js"></script>
+    <script src="js/form-validation/form-active.js"></script>
+    <!-- dropzone JS
+            ============================================ -->
+    <script src="js/dropzone/dropzone.js"></script>
+    <!-- tab JS
+            ============================================ -->
+    <script src="js/tab.js"></script>
+    <!-- plugins JS
+            ============================================ -->
+    <script src="js/plugins.js"></script>
+    <!-- main JS
+            ============================================ -->
+    <script src="js/main.js"></script>
+    <!-- tawk chat JS
+            ============================================ -->
+    <script src="js/tawk-chat.js"></script>
+
+
+    <!-- dropzone JS
+		============================================ -->
+    <script src="js/dropzone/dropzone.js"></script>
+    <!-- tab JS
+                ============================================ -->
+    <script src="js/tab.js"></script>
 
     <!-- main JS
-		============================================ -->
+            ============================================ -->
     <script src="js/main.js"></script>
 
 </body>

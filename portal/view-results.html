@@ -35,24 +35,24 @@
     <link rel="stylesheet" href="css/meanmenu.min.css">
     <!-- main CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
     <!-- educate icon CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/educate-custon-icon.css">
+    <link rel="stylesheet" href="css/educate-custon-icon.css" type="text/css">
     <!-- morrisjs CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/morrisjs/morris.css">
+    <link rel="stylesheet" href="css/morrisjs/morris.css" type="text/css">
     <!-- mCustomScrollbar CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/scrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/scrollbar/jquery.mCustomScrollbar.min.css" type="text/css">
     <!-- metisMenu CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/metisMenu/metisMenu.min.css">
-    <link rel="stylesheet" href="css/metisMenu/metisMenu-vertical.css">
+    <link rel="stylesheet" href="css/metisMenu/metisMenu.min.css" type="text/css">
+    <link rel="stylesheet" href="css/metisMenu/metisMenu-vertical.css" type="text/css">
     <!-- calendar CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/calendar/fullcalendar.min.css">
-    <link rel="stylesheet" href="css/calendar/fullcalendar.print.min.css">
+    <link rel="stylesheet" href="css/calendar/fullcalendar.min.css" type="text/css">
+    <link rel="stylesheet" href="css/calendar/fullcalendar.print.min.css" type="text/css">
     <!-- x-editor CSS
 		============================================ -->
     <link rel="stylesheet" href="css/editor/select2.css">
@@ -61,14 +61,14 @@
     <link rel="stylesheet" href="css/editor/x-editor-style.css">
     <!-- normalize CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/data-table/bootstrap-table.css">
-    <link rel="stylesheet" href="css/data-table/bootstrap-editable.css">
+    <link rel="stylesheet" href="css/data-table/bootstrap-table.css" type="text/css">
+    <link rel="stylesheet" href="css/data-table/bootstrap-editable.css" type="text/css">
     <!-- style CSS
 		============================================ -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <!-- responsive CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
     <!-- modernizr JS
 		============================================ -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -82,8 +82,10 @@
     <div class="left-sidebar-pro">
         <nav id="sidebar" class="">
             <div class="sidebar-header">
-                <a href="index.html"><img class="main-logo" src="img/logo/logosn.png" alt="" /></a>
-                <strong><a href="index.html"><img src="img/logo/logosn.png" alt="" /></a></strong>
+                <a href="index.html"><img class="main-logo" src="img/logo/delta_logo150x150.png" style="max-height:60px"
+                        height="60px" alt="" /></a>
+                <strong><a href="index.html"><img src="img/logo/delta_logo150x150.png" style="max-height:60px"
+                            height="60px" alt="" /></a></strong>
             </div>
             <div class="left-custom-menu-adp-wrap comment-scrollbar">
                 <nav class="sidebar-nav left-sidebar-menu-pro">
@@ -195,7 +197,8 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="logo-pro">
-                        <a href="index.html"><img class="main-logo" src="img/logo/logo.png" alt="" /></a>
+                        <a href="index.html"><img class="main-logo" src="img/logo/delta_logo150x150.png"
+                                style="max-height:60px" height="60px" alt="" /></a>
                     </div>
                 </div>
             </div>
@@ -245,16 +248,16 @@
                             <div class="mobile-menu">
                                 <nav id="dropdown">
                                     <ul class="mobile-menu-nav">
-                                        <li><a href="#">Dashboard <span
+                                        <li><a href="index.html">Dashboard <span
                                                     class="admin-project-icon edu-icon edu-down-arrow"></span></a>
 
                                         </li>
                                         <li><a data-toggle="collapse" data-target="#demoevent" href="#">Results <span
                                                     class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                             <ul id="demoevent" class="collapse dropdown-header-top">
-                                                <li><a href="#">All Results</a>
+                                                <li><a href="#">Check Result</a>
                                                 </li>
-                                                <li><a href="upload-results.html">Add Result</a>
+                                                <li><a href="upload-results.html">Upload Result</a>
                                                 </li>
                                                 <li><a href="#">Edit Result</a>
                                                 </li>
@@ -382,13 +385,20 @@
                                                 <th data-field="state" data-checkbox="true"></th>
                                                 <th data-field="id">ID</th>
                                                 <th data-field="subject" data-editable="false">Subject</th>
-                                                <th data-field="test1" data-editable="false">Test 1</th>
-                                                <th data-field="test2" data-editable="false">Test 2</th>
-                                                <th data-field="examination">Examination</th>
-                                                <th data-field="totalgrade" data-editable="false">Total Grade</th>
-                                                <th data-field="position" data-editable="false">Position</th>
-                                                <th data-field="date" data-editable="false">Date</th>
-                                                <th data-field="action">Action</th>
+                                                <th data-field="ca" data-editable="false">CA (40%)</th>
+
+                                                <th data-field="examination">Exam (60%)</th>
+                                                <th data-field="totalgrade" data-editable="false">Total Score (100%)
+                                                </th>
+                                                <th data-field="grade" data-editable="false">Grade</th>
+                                                <th data-field="class-lowest-score" data-editable="false">Class Lowest
+                                                    Score</th>
+                                                <th data-field="class-highest-score" data-editable="false">Class Highest
+                                                    Score</th>
+                                                <th data-field="subject-avg-score" data-editable="false">Subject Avg.
+                                                    Score</th>
+                                                <th data-field="position" data-editable="false">Subject Position</th>
+                                                <th data-field="remark" data-editable="false">Remarks</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -396,132 +406,365 @@
                                                 <td></td>
                                                 <td>1</td>
                                                 <td>Mathematics</td>
-                                                <td>20</td>
-                                                <td>30</td>
-                                                <td class="datatable-ct"><span class="pie">50</span>
+                                                <td>40</td>
+
+                                                <td>60</span>
                                                 </td>
                                                 <td>100%</td>
+                                                <td>A</td>
+                                                <td>30</td>
+                                                <td>60</td>
+                                                <td>50</td>
                                                 <td>1st</td>
-                                                <td>Jul 14, 2017</td>
-                                                <td class="datatable-ct"><i class="fa fa-check"></i>
-                                                </td>
+                                                <td>Excellent</td>
+
                                             </tr>
                                             <tr>
                                                 <td></td>
                                                 <td>2</td>
                                                 <td>English language</td>
-                                                <td>20</td>
-                                                <td>30</td>
-                                                <td class="datatable-ct"><span class="pie">50</span>
+                                                <td>40</td>
+
+                                                <td>60</span>
                                                 </td>
                                                 <td>100%</td>
+                                                <td>A</td>
+                                                <td>30</td>
+                                                <td>60</td>
+                                                <td>50</td>
                                                 <td>1st</td>
-                                                <td>feb 2, 2017</td>
-                                                <td class="datatable-ct"><i class="fa fa-check"></i>
-                                                </td>
+                                                <td>Excellent</td>
+
                                             </tr>
                                             <tr>
                                                 <td></td>
                                                 <td>3</td>
                                                 <td>Literature</td>
-                                                <td>20</td>
-                                                <td>30</td>
-                                                <td class="datatable-ct"><span class="pie">50</span>
+                                                <td>40</td>
+
+                                                <td>60</span>
                                                 </td>
                                                 <td>100%</td>
+                                                <td>A</td>
+                                                <td>30</td>
+                                                <td>60</td>
+                                                <td>50</td>
                                                 <td>1st</td>
-                                                <td>Seb 5, 2017</td>
-                                                <td class="datatable-ct"><i class="fa fa-check"></i>
-                                                </td>
+                                                <td>Excellent</td>
+
                                             </tr>
                                             <tr>
                                                 <td></td>
                                                 <td>4</td>
                                                 <td>Commerce</td>
-                                                <td>20</td>
-                                                <td>30</td>
-                                                <td class="datatable-ct"><span class="pie">50</span>
+                                                <td>40</td>
+
+                                                <td>60</span>
                                                 </td>
                                                 <td>100%</td>
+                                                <td>A</td>
+                                                <td>30</td>
+                                                <td>60</td>
+                                                <td>50</td>
                                                 <td>1st</td>
-                                                <td>Oct 10, 2017</td>
-                                                <td class="datatable-ct"><i class="fa fa-check"></i>
-                                                </td>
+                                                <td>Excellent</td>
+
                                             </tr>
                                             <tr>
                                                 <td></td>
                                                 <td>5</td>
                                                 <td>Economics</td>
-                                                <td>20</td>
-                                                <td>30</td>
-                                                <td class="datatable-ct"><span class="pie">50</span>
+                                                <td>40</td>
+
+                                                <td>60</span>
                                                 </td>
                                                 <td>100%</td>
+                                                <td>A</td>
+                                                <td>30</td>
+                                                <td>60</td>
+                                                <td>50</td>
                                                 <td>1st</td>
-                                                <td>Nov 20, 2017</td>
-                                                <td class="datatable-ct"><i class="fa fa-check"></i>
-                                                </td>
+                                                <td>Excellent</td>
+
                                             </tr>
                                             <tr>
                                                 <td></td>
                                                 <td>6</td>
                                                 <td>Biology</td>
-                                                <td>20</td>
-                                                <td>30</td>
-                                                <td class="datatable-ct"><span class="pie">50</span>
+                                                <td>40</td>
+
+                                                <td>60</span>
                                                 </td>
                                                 <td>100%</td>
+                                                <td>A</td>
+                                                <td>30</td>
+                                                <td>60</td>
+                                                <td>50</td>
                                                 <td>1st</td>
-                                                <td>Aug 25, 2017</td>
-                                                <td class="datatable-ct"><i class="fa fa-check"></i>
-                                                </td>
+                                                <td>Excellent</td>
+
                                             </tr>
                                             <tr>
                                                 <td></td>
                                                 <td>7</td>
                                                 <td>Fine Arts</td>
-                                                <td>20</td>
-                                                <td>30</td>
-                                                <td class="datatable-ct"><span class="pie">50</span>
+                                                <td>40</td>
+
+                                                <td>60</span>
                                                 </td>
                                                 <td>100%</td>
+                                                <td>A</td>
+                                                <td>30</td>
+                                                <td>60</td>
+                                                <td>50</td>
                                                 <td>1st</td>
-                                                <td>July 17, 2017</td>
-                                                <td class="datatable-ct"><i class="fa fa-check"></i>
-                                                </td>
+                                                <td>Excellent</td>
+
                                             </tr>
                                             <tr>
                                                 <td></td>
                                                 <td>8</td>
                                                 <td>Geography</td>
-                                                <td>20</td>
-                                                <td>30</td>
-                                                <td class="datatable-ct"><span class="pie">50</span>
+                                                <td>40</td>
+
+                                                <td>60</span>
                                                 </td>
                                                 <td>100%</td>
+                                                <td>A</td>
+                                                <td>30</td>
+                                                <td>60</td>
+                                                <td>50</td>
                                                 <td>1st</td>
-                                                <td>June 11, 2017</td>
-                                                <td class="datatable-ct"><i class="fa fa-check"></i>
+                                                <td>Excellent</td>
 
                                             </tr>
                                             <tr>
                                                 <td></td>
                                                 <td>9</td>
                                                 <td>Chemistry</td>
-                                                <td>20</td>
-                                                <td>30</td>
-                                                <td class="datatable-ct"><span class="pie">50</span>
+                                                <td>40</td>
+
+                                                <td>60</span>
                                                 </td>
                                                 <td>100%</td>
+                                                <td>A</td>
+                                                <td>30</td>
+                                                <td>60</td>
+                                                <td>50</td>
                                                 <td>1st</td>
-                                                <td>June 11, 2017</td>
-                                                <td class="datatable-ct"><i class="fa fa-check"></i>
+                                                <td>Excellent</td>
 
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="sparkline13-list">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="sparkline13-list">
+                                        <div class="sparkline13-graph">
+                                            <div class="datatable-dashv1-list custom-datatable-overright">
+                                                <table id="table" data-toggle="table" data-pagination="false"
+                                                    data-search="true" data-show-columns="true"
+                                                    data-show-pagination-switch="true" data-show-refresh="true"
+                                                    data-key-events="true" data-show-toggle="true" data-resizable="true"
+                                                    data-cookie="true" data-cookie-id-table="saveId"
+                                                    data-show-export="true" data-click-to-select="false"
+                                                    data-toolbar="#toolbar">
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="2" class="text-center">AFFECTIVE TRAITS</th>
+                                                            <th colspan="2" class="text-center">PSYCHOMOTOR SKILLS</th>
+                                                        </tr>
+
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Puntuality</td>
+                                                            <td>4</td>
+                                                            <td>Reading</td>
+                                                            <td>4</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Mental Alertness</td>
+                                                            <td>4</td>
+
+                                                            <td>Verbal Fuency/Diction</td>
+                                                            <td>4</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Attentiveness</td>
+                                                            <td>4</td>
+
+                                                            <td>Handwriting</td>
+                                                            <td>4</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Respect</td>
+                                                            <td>4</td>
+
+                                                            <td>Musical Skills</td>
+                                                            <td>4</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Altitude to School</td>
+                                                            <td>4</td>
+
+                                                            <td>Creative Art</td>
+                                                            <td>4</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Neatness</td>
+                                                            <td>4</td>
+
+                                                            <td>Physical Education</td>
+                                                            <td>4</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Politeness</td>
+                                                            <td>4</td>
+
+                                                            <td>General Reasoning</td>
+                                                            <td>4</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Honesty</td>
+                                                            <td>4</td>
+
+                                                            <td>Completes School work promptly</td>
+                                                            <td>4</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Relationship with peers</td>
+                                                            <td>4</td>
+
+                                                            <td>Spirit of teamwork</td>
+                                                            <td>4</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="sparkline13-list">
+                                        <div class="sparkline13-graph">
+                                            <div class="datatable-dashv1-list custom-datatable-overright">
+                                                <table id="table" class="table table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th data-field="report" colspan="3" class="text-center"
+                                                                data-editable="false">
+                                                                Report Summary</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Average Total Score</td>
+                                                            <td>605 out of 1100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Average Score</td>
+                                                            <td>67.22</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Position</td>
+                                                            <td>13th out of 47</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Total Subjects Offered in Class</td>
+                                                            <td>9</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Total Subjects Taken</td>
+                                                            <td>11</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Head teacher's Comment</td>
+                                                            <td>Great Job, Wonderful</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Principal's Comment</td>
+                                                            <td>Great Job, Wonderful</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="sparkline13-list">
+                                        <div class="sparkline13-graph">
+                                            <div class="datatable-dashv1-list custom-datatable-overright">
+                                                <table id="table" class="table table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th data-field="grading" colspan="2" class="text-center"
+                                                                data-editable="false">Grading System</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>70% - 100%</td>
+                                                            <td>Excellent</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>60% - 69%</td>
+                                                            <td>Very Good</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>50% - 59%</td>
+                                                            <td>Good</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>45% - 49%</td>
+                                                            <td>Average</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>40% - 44%</td>
+                                                            <td>Poor</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>0% - 39%</td>
+                                                            <td>Fail</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th colspan="2">
+                                                                CA: Continous Assessment
+                                                                Avg. Score = Total Score/ No. Subj. Offered
+                                                            </th>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="form-group payment-adress">
+                                        <a href="#" class="btn btn-danger jobs-link">Save
+                                            Result</a>
+                                        <a href="#" class="btn btn-danger jobs-link">Print
+                                            Result</a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -595,7 +838,7 @@
     <script src="js/editable/xediable-active.js"></script>
     <!-- Chart JS
 		============================================ -->
-    <script src="js/chart/jquery.peity.min.js"></script>
+    <script src="/js/chart/jquery.peity.min.js"></script>
     <script src="js/peity/peity-active.js"></script>
     <!-- tab JS
 		============================================ -->
@@ -608,7 +851,8 @@
     <script src="js/main.js"></script>
     <!-- tawk chat JS
 		============================================ -->
-    <script src="js/tawk-chat.js"></script>
+    <!-- <script src="js/tawk-chat.js"></script> -->
+
 </body>
 
 </html>
