@@ -381,8 +381,7 @@ header {
 /***************  Sub Header Start  *****************/
 
 .subheader {
-	background: url(../images/subheaderbg.jpg) no-repeat;
-	background-size: cover;
+	background: url(../images/npatt1.jpg) #006DF0;
 	padding: 110px 0;
 }
 
