@@ -389,17 +389,17 @@
                                                         <div class="row">
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                                 <div class="form-group">
-                                                                    <input disabled name="schoolname" type="text"
+                                                                    <input name="schoolname" type="text"
                                                                         class="form-control" placeholder="School Name">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input disabled name="studentname" id="studentname"
+                                                                    <input name="studentname" id="studentname"
                                                                         type="text" class="form-control"
                                                                         placeholder="Student Name">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input disabled name="Term" type="text"
-                                                                        class="form-control" placeholder="Student Term">
+                                                                    <input name="Term" type="text" class="form-control"
+                                                                        placeholder="Student Term">
                                                                 </div>
                                                                 <div class="form-group alert-up-pd">
                                                                     <div class="dz-message needsclick download-custom">
@@ -420,25 +420,23 @@
                                                             </div>
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                                 <div class="form-group res-mg-t-15">
-                                                                    <input disabled name="studentclass" type="text"
+                                                                    <input name="studentclass" type="text"
                                                                         class="form-control"
                                                                         placeholder="Student Class">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input disabled name="studentdivision" type="text"
+                                                                    <input name="studentdivision" type="text"
                                                                         class="form-control"
                                                                         placeholder="Student Division">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input disabled id="academicsession"
-                                                                        name="academicsession" type="text"
-                                                                        class="form-control"
+                                                                    <input id="academicsession" name="academicsession"
+                                                                        type="text" class="form-control"
                                                                         placeholder="Academic Session">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input disabled id="gender" name="gender"
-                                                                        type="text" class="form-control"
-                                                                        placeholder="Gender">
+                                                                    <input id="gender" name="gender" type="text"
+                                                                        class="form-control" placeholder="Gender">
                                                                 </div>
 
                                                             </div>
@@ -466,12 +464,11 @@
                                                             </div>
                                                             <hr>
                                                             <div class="form-group">
-                                                                <select class="form-control">
+                                                                <select class="form-control" id="subjects">
                                                                     <option selected disabled>Select other subjects
                                                                     </option>
                                                                     <option disabled>Primary Subjects</option>
                                                                     <option>Language Arts</option>
-                                                                    <option>Mathematics</option>
                                                                     <option>Science</option>
                                                                     <option>Health</option>
                                                                     <option>Handwriting</option>
@@ -497,7 +494,6 @@
                                                                     <option>Reading</option>
                                                                     <option>Language arts</option>
                                                                     <option>Speech and Debate</option>
-                                                                    <option>English</option>
                                                                     <option>Basic Math</option>
                                                                     <option>Pre-algebra</option>
                                                                     <option>Consumer Math</option>
@@ -735,7 +731,7 @@
                                                             </div>
                                                             <hr />
                                                             <div class="form-group">
-                                                                <input type="number" min="1" max="100"
+                                                                <input type="number" id="othersCA" min="1" max="100"
                                                                     class="form-control" placeholder="Others CA Score">
                                                             </div>
                                                         </div>
@@ -759,7 +755,7 @@
                                                             </div>
                                                             <hr />
                                                             <div class="form-group">
-                                                                <input type="number" min="1" max="100"
+                                                                <input type="number" id="othersExam" min="1" max="100"
                                                                     class="form-control"
                                                                     placeholder="Others Examination Score">
                                                             </div>
@@ -988,7 +984,20 @@
             ============================================ -->
     <script src="js/main.js"></script>
 
+    <script>
+        const subjects = document.getElementById('subjects');
+        const CA = document.getElementById('othersCA');
+        const Exam = document.getElementById('othersExam');
 
+        subjects.addEventListener('change', (event) => {
+            CA.placeholder = subjects.options[subjects.selectedIndex].text + " CA Score";
+            Exam.placeholder = subjects.options[subjects.selectedIndex].text + " Examination Score";
+            CA.value = "";
+            Exam.value = "";
+        });
+
+
+    </script>
 </body>
 
 </html>
