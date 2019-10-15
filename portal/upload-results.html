@@ -984,19 +984,22 @@
             ============================================ -->
     <script src="js/main.js"></script>
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <script>
         const subjects = document.getElementById('subjects');
         const CA = document.getElementById('othersCA');
         const Exam = document.getElementById('othersExam');
 
         subjects.addEventListener('change', (event) => {
+            if (CA.value != '' && Exam.value != '') {
+                swal("Subject Added Successfully")
+            }
             CA.placeholder = subjects.options[subjects.selectedIndex].text + " CA Score";
             Exam.placeholder = subjects.options[subjects.selectedIndex].text + " Examination Score";
             CA.value = "";
             Exam.value = "";
         });
-
-
     </script>
 </body>
 
