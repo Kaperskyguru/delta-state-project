@@ -1,0 +1,578 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Data Table | Educational Portal</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon
+		============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Google Fonts
+		============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- owl.carousel CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <!-- animate CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- normalize CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- meanmenu icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/meanmenu.min.css">
+    <!-- main CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <!-- educate icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/educate-custon-icon.css" type="text/css">
+    <!-- morrisjs CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/morrisjs/morris.css" type="text/css">
+    <!-- mCustomScrollbar CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/scrollbar/jquery.mCustomScrollbar.min.css" type="text/css">
+    <!-- metisMenu CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/metisMenu/metisMenu.min.css" type="text/css">
+    <link rel="stylesheet" href="css/metisMenu/metisMenu-vertical.css" type="text/css">
+    <!-- calendar CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/calendar/fullcalendar.min.css" type="text/css">
+    <link rel="stylesheet" href="css/calendar/fullcalendar.print.min.css" type="text/css">
+    <!-- x-editor CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/editor/select2.css">
+    <link rel="stylesheet" href="css/editor/datetimepicker.css">
+    <link rel="stylesheet" href="css/editor/bootstrap-editable.css">
+    <link rel="stylesheet" href="css/editor/x-editor-style.css">
+    <!-- normalize CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/data-table/bootstrap-table.css" type="text/css">
+    <link rel="stylesheet" href="css/data-table/bootstrap-editable.css" type="text/css">
+    <!-- style CSS
+		============================================ -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- responsive CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <!-- modernizr JS
+		============================================ -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+    <!-- Start Left menu area -->
+    <div class="left-sidebar-pro">
+        <nav id="sidebar" class="">
+            <div class="sidebar-header">
+                <a href="index.html"><img class="main-logo" src="img/logo/delta_logo150x150.png" style="max-height:60px"
+                        height="60px" alt="" /></a>
+                <strong><a href="index.html"><img src="img/logo/delta_logo150x150.png" style="max-height:60px"
+                            height="60px" alt="" /></a></strong>
+            </div>
+            <div class="left-custom-menu-adp-wrap comment-scrollbar">
+                <nav class="sidebar-nav left-sidebar-menu-pro">
+                    <ul class="metismenu" id="menu1">
+                        <li class="active">
+                            <a href="index.html">
+                                <span class="educate-icon educate-home icon-wrap"></span>
+                                <span class="mini-click-non">Dashboard</span>
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a class="has-arrow" href="#" aria-expanded="false"><span
+                                    class="educate-icon educate-professor icon-wrap"></span> <span
+                                    class="mini-click-non">Results</span></a>
+                            <ul class="submenu-angle" aria-expanded="false">
+                                <li><a href="check-result.html"><span class="mini-sub-pro">Check
+                                            Results</span></a></li>
+                                <li><a href="upload-results.html"><span class="mini-sub-pro">Upload
+                                            Results</span></a></li>
+                                <li><a href="#"><span class="mini-sub-pro">Edit
+                                            Results</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="#" aria-expanded="false"><span
+                                    class="educate-icon educate-professor icon-wrap"></span> <span
+                                    class="mini-click-non">Teachers</span></a>
+                            <ul class="submenu-angle" aria-expanded="false">
+                                <li><a href="#"><span class="mini-sub-pro">All
+                                            Teachers</span></a></li>
+                                <li><a href="#"><span class="mini-sub-pro">Add
+                                            Teacher</span></a></li>
+                                <li><a href="#"><span class="mini-sub-pro">Edit
+                                            Teacher</span></a></li>
+                                <li><a href="#"><span class="mini-sub-pro">Teacher
+                                            Profile</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="#" aria-expanded="false"><span
+                                    class="educate-icon educate-student icon-wrap"></span> <span
+                                    class="mini-click-non">Students</span></a>
+                            <ul class="submenu-angle" aria-expanded="false">
+                                <li><a title="All Students" href="#"><span class="mini-sub-pro">All
+                                            Students</span></a></li>
+                                <li><a title="Add Students" href="#"><span class="mini-sub-pro">Add
+                                            Student</span></a></li>
+                                <li><a title="Edit Students" href="#"><span class="mini-sub-pro">Edit
+                                            Student</span></a></li>
+                                <li><a title="Students Profile" href="#"><span class="mini-sub-pro">Student
+                                            Profile</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="#" aria-expanded="false"><span
+                                    class="educate-icon educate-course icon-wrap"></span> <span
+                                    class="mini-click-non">Transcript</span></a>
+                            <ul class="submenu-angle" aria-expanded="false">
+                                <li><a href="#"><span class="mini-sub-pro">All
+                                            Transcripts</span></a></li>
+                                <li><a href="#"><span class="mini-sub-pro">Add
+                                            Transcript</span></a></li>
+                                <li><a href="#"><span class="mini-sub-pro">Edit
+                                            Transcript</span></a></li>
+                                <li><a href="#"><span class="mini-sub-pro">Transcripts
+                                            Info</span></a></li>
+                                <li><a href="#"><span class="mini-sub-pro">Transcripts
+                                            Payment</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="#" aria-expanded="false"><span
+                                    class="educate-icon educate-library icon-wrap"></span> <span
+                                    class="mini-click-non">Assignments</span></a>
+                            <ul class="submenu-angle" aria-expanded="false">
+                                <li><a href="#"><span class="mini-sub-pro">All
+                                            Assignments</span></a></li>
+                                <li><a href="#"><span class="mini-sub-pro">Add
+                                            Assignment</span></a></li>
+                                <li><a href="#"><span class="mini-sub-pro">Edit
+                                            Assignment</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="#" aria-expanded="false"><span
+                                    class="educate-icon educate-department icon-wrap"></span> <span
+                                    class="mini-click-non">Departments</span></a>
+                            <ul class="submenu-angle" aria-expanded="false">
+                                <li><a title="Departments List" href="#"><span class="mini-sub-pro">Departments
+                                            List</span></a></li>
+                                <li><a title="Add Departments" href="#"><span class="mini-sub-pro">Add
+                                            Departments</span></a></li>
+                                <li><a title="Edit Departments" href="#"><span class="mini-sub-pro">Edit
+                                            Departments</span></a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </div>
+    <!-- End Left menu area -->
+    <!-- Start Welcome area -->
+    <div class="all-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="logo-pro">
+                        <a href="index.html"><img class="main-logo" src="img/logo/delta_logo150x150.png"
+                                style="max-height:60px" height="60px" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-advance-area">
+            <div class="header-top-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="header-top-wraper">
+                                <div class="row">
+                                    <div class="col-lg-1 col-md-0 col-sm-1 col-xs-12">
+                                        <div class="menu-switcher-pro">
+                                            <button type="button" id="sidebarCollapse"
+                                                class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
+                                                <i class="educate-icon educate-nav"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
+                                        <div class="header-top-menu tabl-d-n">
+                                            <ul class="nav navbar-nav mai-top-nav">
+                                                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a>
+                                                </li>
+                                                <li class="nav-item"><a href="#" class="nav-link">About</a>
+                                                </li>
+                                                <li class="nav-item"><a href="#" class="nav-link">Services</a>
+                                                </li>
+
+                                                <li class="nav-item"><a href="#" class="nav-link">Support</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu start -->
+            <div class="mobile-menu-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="mobile-menu">
+                                <nav id="dropdown">
+                                    <ul class="mobile-menu-nav">
+                                        <li><a href="index.html">Dashboard <span
+                                                    class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+
+                                        </li>
+                                        <li><a data-toggle="collapse" data-target="#demoevent" href="#">Results <span
+                                                    class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                            <ul id="demoevent" class="collapse dropdown-header-top">
+                                                <li><a href="check-result.html">Check Result</a>
+                                                </li>
+                                                <li><a href="upload-results.html">Upload Result</a>
+                                                </li>
+                                                <li><a href="#">Edit Result</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a data-toggle="collapse" data-target="#demopro" href="#">Students <span
+                                                    class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                            <ul id="demopro" class="collapse dropdown-header-top">
+                                                <li><a href="#">All Students</a>
+                                                </li>
+                                                <li><a href="#">Add Student</a>
+                                                </li>
+                                                <li><a href="#">Edit Student</a>
+                                                </li>
+                                                <li><a href="#">Student Profile</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a data-toggle="collapse" data-target="#democrou" href="#">Courses <span
+                                                    class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                            <ul id="democrou" class="collapse dropdown-header-top">
+                                                <li><a href="#"><span class="mini-sub-pro">All
+                                                            Transcripts</span></a></li>
+                                                <li><a href="#"><span class="mini-sub-pro">Add
+                                                            Transcript</span></a></li>
+                                                <li><a href="#"><span class="mini-sub-pro">Edit
+                                                            Transcript</span></a></li>
+                                                <li><a href="#"><span class="mini-sub-pro">Transcripts
+                                                            Info</span></a></li>
+                                                <li><a href="#"><span class="mini-sub-pro">Transcripts
+                                                            Payment</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a data-toggle="collapse" data-target="#demolibra" href="#">Assignments
+                                                <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                            <ul id="demolibra" class="collapse dropdown-header-top">
+                                                <li><a href="#"><span class="mini-sub-pro">All
+                                                            Assignments</span></a></li>
+                                                <li><a href="#"><span class="mini-sub-pro">Add
+                                                            Assignment</span></a></li>
+                                                <li><a href="#"><span class="mini-sub-pro">Edit
+                                                            Assignment</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a data-toggle="collapse" data-target="#demodepart" href="#">Departments
+                                                <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                            <ul id="demodepart" class="collapse dropdown-header-top">
+                                                <li><a href="#">Departments List</a>
+                                                </li>
+                                                <li><a href="#">Add Departments</a>
+                                                </li>
+                                                <li><a href="#">Edit Departments</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu end -->
+            <div class="breadcome-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="breadcome-list">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="breadcome-heading">
+                                            <form role="search" class="sr-input-func">
+                                                <input type="text" placeholder="Search..."
+                                                    class="search-int form-control">
+                                                <a href="#"><i class="fa fa-search"></i></a>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <ul class="breadcome-menu">
+                                            <li><a href="#">Home</a> <span class="bread-slash">/</span>
+                                            </li>
+                                            <li><span class="bread-blod">preview</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Static Table Start -->
+        <div class="data-table-area mg-b-15">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="sparkline13-list">
+
+                            <div class="sparkline13-graph">
+                                <div class="datatable-dashv1-list custom-datatable-overright">
+                                    <div id="toolbar">
+                                        <select class="form-control dt-tb">
+                                            <option value="">Export Basic</option>
+                                            <option value="all">Export All</option>
+                                            <option value="selected">Export Selected</option>
+                                        </select>
+                                    </div>
+                                    <table id="table" data-toggle="table" data-pagination="false" data-search="true"
+                                        data-show-columns="true" data-show-pagination-switch="true"
+                                        data-show-refresh="true" data-key-events="true" data-show-toggle="true"
+                                        data-resizable="true" data-cookie="true" data-cookie-id-table="saveId"
+                                        data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
+                                        <thead>
+                                            <tr>
+                                                <th data-field="state" data-checkbox="true"></th>
+                                                <th data-field="id">ID</th>
+                                                <th data-field="subject" data-editable="false">Subject</th>
+                                                <th data-field="ca" data-editable="true">CA (40%)</th>
+                                                <th data-field="examination" data-editable="true">Exam (60%)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td>1</td>
+                                                <td>Mathematics</td>
+                                                <td>40</td>
+
+                                                <td>60</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>2</td>
+                                                <td>English language</td>
+                                                <td>40</td>
+
+                                                <td>60</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>3</td>
+                                                <td>Literature</td>
+                                                <td>40</td>
+
+                                                <td>60</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>4</td>
+                                                <td>Commerce</td>
+                                                <td>40</td>
+
+                                                <td>60</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>5</td>
+                                                <td>Economics</td>
+                                                <td>40</td>
+
+                                                <td>60</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>6</td>
+                                                <td>Biology</td>
+                                                <td>40</td>
+
+                                                <td>60</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>7</td>
+                                                <td>Fine Arts</td>
+                                                <td>40</td>
+
+                                                <td>60</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>8</td>
+                                                <td>Geography</td>
+                                                <td>40</td>
+
+                                                <td>60</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>9</td>
+                                                <td>Chemistry</td>
+                                                <td>40</td>
+
+                                                <td>60</td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="breadcome-list">
+                            <div class="payment-adress">
+                                <a href="upload-results.html" class="btn btn-danger" style="width:200px">Back</a>
+                                <a href="#" class="btn btn-success" style="width:200px">Upload Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Static Table End -->
+    <div class="footer-copyright-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="footer-copy-right">
+                        <p>Copyright © 2018. All rights reserved. Designed by <a
+                                href="https://facebook.com/multimegaitschool/">Multimega Groups</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- jquery
+		============================================ -->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <!-- bootstrap JS
+		============================================ -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- wow JS
+		============================================ -->
+    <script src="js/wow.min.js"></script>
+    <!-- price-slider JS
+		============================================ -->
+    <script src="js/jquery-price-slider.js"></script>
+    <!-- meanmenu JS
+		============================================ -->
+    <script src="js/jquery.meanmenu.js"></script>
+    <!-- owl.carousel JS
+		============================================ -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- sticky JS
+		============================================ -->
+    <script src="js/jquery.sticky.js"></script>
+    <!-- scrollUp JS
+		============================================ -->
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <!-- mCustomScrollbar JS
+		============================================ -->
+    <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/scrollbar/mCustomScrollbar-active.js"></script>
+    <!-- metisMenu JS
+		============================================ -->
+    <script src="js/metisMenu/metisMenu.min.js"></script>
+    <script src="js/metisMenu/metisMenu-active.js"></script>
+    <!-- data table JS
+		============================================ -->
+    <script src="js/data-table/bootstrap-table.js"></script>
+    <script src="js/data-table/tableExport.js"></script>
+    <script src="js/data-table/data-table-active.js"></script>
+    <script src="js/data-table/bootstrap-table-editable.js"></script>
+    <script src="js/data-table/bootstrap-editable.js"></script>
+    <script src="js/data-table/bootstrap-table-resizable.js"></script>
+    <script src="js/data-table/colResizable-1.5.source.js"></script>
+    <script src="js/data-table/bootstrap-table-export.js"></script>
+    <!--  editable JS
+		============================================ -->
+    <script src="js/editable/jquery.mockjax.js"></script>
+    <script src="js/editable/mock-active.js"></script>
+    <script src="js/editable/select2.js"></script>
+    <script src="js/editable/moment.min.js"></script>
+    <script src="js/editable/bootstrap-datetimepicker.js"></script>
+    <script src="js/editable/bootstrap-editable.js"></script>
+    <script src="js/editable/xediable-active.js"></script>
+    <!-- Chart JS
+		============================================ -->
+    <script src="/js/chart/jquery.peity.min.js"></script>
+    <script src="js/peity/peity-active.js"></script>
+    <!-- tab JS
+		============================================ -->
+    <script src="js/tab.js"></script>
+    <!-- plugins JS
+		============================================ -->
+    <script src="js/plugins.js"></script>
+    <!-- main JS
+		============================================ -->
+    <script src="js/main.js"></script>
+    <!-- tawk chat JS
+		============================================ -->
+    <!-- <script src="js/tawk-chat.js"></script> -->
+
+</body>
+
+</html>
